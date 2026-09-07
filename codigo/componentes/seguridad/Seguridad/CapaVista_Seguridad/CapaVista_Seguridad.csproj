@@ -79,6 +79,12 @@
     <Compile Include="FrmMantenimientoPerfiles.Designer.cs">
       <DependentUpon>FrmMantenimientoPerfiles.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmModulo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmModulo.Designer.cs">
+      <DependentUpon>FrmModulo.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmRecuperacion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -119,6 +125,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMantenimientoPerfiles.resx">
       <DependentUpon>FrmMantenimientoPerfiles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmModulo.resx">
+      <DependentUpon>FrmModulo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmRecuperacion.resx">
       <DependentUpon>FrmRecuperacion.cs</DependentUpon>
