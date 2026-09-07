@@ -26,24 +26,9 @@ namespace CapaVista_Seguridad
         public FrmMantenimientoPerfiles()
         {
             InitializeComponent();
-            CargarDatosDeEjemplo();
         }
 
-        /// <summary>
-        /// Datos de ejemplo únicamente para representar visualmente el prototipo
-        /// (no proviene de CapaModelo_Seguridad; la Vista nunca accede al Modelo
-        /// directamente ni ejecuta SQL). Sin lógica funcional real.
-        /// </summary>
-        private void CargarDatosDeEjemplo()
-        {
-            SeguridadDgvPerfiles.Rows.Add("1", "Administrador", "Perfil con todos los permisos del sistema", true);
-            SeguridadDgvPerfiles.Rows.Add("2", "Bodega", "Control de inventario y materia prima", true);
-            SeguridadDgvPerfiles.Rows.Add("3", "Ventas", "Registro de pedidos y clientes", true);
-            SeguridadDgvPerfiles.Rows.Add("4", "Produccion", "Registro de lotes de embutidos", true);
-            SeguridadDgvPerfiles.Rows.Add("5", "Contabilidad", "Consulta de reportes financieros", false);
 
-            SeguridadLblTotalRegistros.Text = "Total de registros: " + SeguridadDgvPerfiles.Rows.Count;
-        }
 
         private void FrmMantenimientoPerfiles_Load(object sender, System.EventArgs e)
         {
