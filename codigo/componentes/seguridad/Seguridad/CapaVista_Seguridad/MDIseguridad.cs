@@ -135,5 +135,17 @@ namespace CapaVista_Seguridad
             FrmModulo frmasigusu = new FrmModulo();
             frmasigusu.ShowDialog();
         }
+
+        private void SeguridadBtnEmpleados_Click(object sender, EventArgs e)
+        {
+            FrmMantenimientoEmpleado frmEmpleados = new FrmMantenimientoEmpleado();
+            frmEmpleados.ShowDialog();
+        }
+
+        private void SeguridadBtnAplicaciones_Click(object sender, EventArgs e)
+        {
+            FrmMantenimientoAplicacion frmAplicaciones = new FrmMantenimientoAplicacion();
+            frmAplicaciones.ShowDialog();
+        }
     }
 }
