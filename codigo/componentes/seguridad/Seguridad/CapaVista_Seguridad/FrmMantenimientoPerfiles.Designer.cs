@@ -27,10 +27,11 @@ namespace CapaVista_Seguridad
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             this.SeguridadPnlFiltros = new System.Windows.Forms.Panel();
+            this.SeguridadChkActivo = new System.Windows.Forms.CheckBox();
             this.SeguridadTxtDescripcionRol = new System.Windows.Forms.TextBox();
             this.SeguridadTxtCodigoRol = new System.Windows.Forms.TextBox();
             this.SeguridadTxtNombreRol = new System.Windows.Forms.TextBox();
@@ -65,7 +66,6 @@ namespace CapaVista_Seguridad
             this.SeguridadPbIconoPrincipal = new System.Windows.Forms.PictureBox();
             this.SeguridadPbMascota = new System.Windows.Forms.PictureBox();
             this.SeguridadPbBanner = new System.Windows.Forms.PictureBox();
-            this.SeguridadChkActivo = new System.Windows.Forms.CheckBox();
             this.SeguridadPnlFiltros.SuspendLayout();
             this.SeguridadPnlListado.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SeguridadDgvListaRoles)).BeginInit();
@@ -94,6 +94,16 @@ namespace CapaVista_Seguridad
             this.SeguridadPnlFiltros.Size = new System.Drawing.Size(1358, 140);
             this.SeguridadPnlFiltros.TabIndex = 6;
             // 
+            // SeguridadChkActivo
+            // 
+            this.SeguridadChkActivo.AutoSize = true;
+            this.SeguridadChkActivo.Location = new System.Drawing.Point(181, 102);
+            this.SeguridadChkActivo.Name = "SeguridadChkActivo";
+            this.SeguridadChkActivo.Size = new System.Drawing.Size(91, 20);
+            this.SeguridadChkActivo.TabIndex = 29;
+            this.SeguridadChkActivo.Text = "validacion";
+            this.SeguridadChkActivo.UseVisualStyleBackColor = true;
+            // 
             // SeguridadTxtDescripcionRol
             // 
             this.SeguridadTxtDescripcionRol.Location = new System.Drawing.Point(1027, 53);
@@ -104,6 +114,7 @@ namespace CapaVista_Seguridad
             // 
             // SeguridadTxtCodigoRol
             // 
+            this.SeguridadTxtCodigoRol.Enabled = false;
             this.SeguridadTxtCodigoRol.Location = new System.Drawing.Point(161, 53);
             this.SeguridadTxtCodigoRol.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.SeguridadTxtCodigoRol.Name = "SeguridadTxtCodigoRol";
@@ -243,31 +254,31 @@ namespace CapaVista_Seguridad
             // 
             this.SeguridadDgvListaRoles.AllowUserToAddRows = false;
             this.SeguridadDgvListaRoles.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(240)))), ((int)(((byte)(232)))));
-            this.SeguridadDgvListaRoles.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle22;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(240)))), ((int)(((byte)(232)))));
+            this.SeguridadDgvListaRoles.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
             this.SeguridadDgvListaRoles.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.SeguridadDgvListaRoles.BackgroundColor = System.Drawing.Color.White;
             this.SeguridadDgvListaRoles.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(197)))), ((int)(((byte)(190)))));
-            dataGridViewCellStyle23.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle23.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(60)))), ((int)(((byte)(65)))));
-            dataGridViewCellStyle23.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle23.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle23.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.SeguridadDgvListaRoles.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle23;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(197)))), ((int)(((byte)(190)))));
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(60)))), ((int)(((byte)(65)))));
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.SeguridadDgvListaRoles.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
             this.SeguridadDgvListaRoles.ColumnHeadersHeight = 34;
             this.SeguridadDgvListaRoles.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle24.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle24.Font = new System.Drawing.Font("Segoe UI", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle24.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle24.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle24.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle24.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.SeguridadDgvListaRoles.DefaultCellStyle = dataGridViewCellStyle24;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Segoe UI", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.SeguridadDgvListaRoles.DefaultCellStyle = dataGridViewCellStyle12;
             this.SeguridadDgvListaRoles.Location = new System.Drawing.Point(15, 52);
             this.SeguridadDgvListaRoles.Name = "SeguridadDgvListaRoles";
             this.SeguridadDgvListaRoles.ReadOnly = true;
@@ -277,6 +288,7 @@ namespace CapaVista_Seguridad
             this.SeguridadDgvListaRoles.Size = new System.Drawing.Size(1328, 426);
             this.SeguridadDgvListaRoles.TabIndex = 3;
             this.SeguridadDgvListaRoles.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.SeguridadDgvPerfiles_CellContentClick);
+            this.SeguridadDgvListaRoles.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.SeguridadDgvListaRoles_CellMouseClick);
             // 
             // SeguridadLblSubtitulo
             // 
@@ -342,6 +354,7 @@ namespace CapaVista_Seguridad
             this.SeguridadBtnIngresar.TabIndex = 14;
             this.SeguridadBtnIngresar.Text = "➕\r\nIngresar";
             this.SeguridadBtnIngresar.UseVisualStyleBackColor = false;
+            this.SeguridadBtnIngresar.Click += new System.EventHandler(this.SeguridadBtnIngresar_Click);
             // 
             // SeguridadBtnModificar
             // 
@@ -452,6 +465,7 @@ namespace CapaVista_Seguridad
             this.SeguridadBtnRefrescar.TabIndex = 21;
             this.SeguridadBtnRefrescar.Text = "🔄\r\nRefrescar";
             this.SeguridadBtnRefrescar.UseVisualStyleBackColor = false;
+            this.SeguridadBtnRefrescar.Click += new System.EventHandler(this.SeguridadBtnRefrescar_Click);
             // 
             // SeguridadBtnInicio
             // 
@@ -497,6 +511,7 @@ namespace CapaVista_Seguridad
             this.SeguridadBtnSiguiente.TabIndex = 24;
             this.SeguridadBtnSiguiente.Text = "▶\r\nSiguiente";
             this.SeguridadBtnSiguiente.UseVisualStyleBackColor = false;
+            this.SeguridadBtnSiguiente.Click += new System.EventHandler(this.SeguridadBtnSiguiente_Click);
             // 
             // SeguridadBtnFin
             // 
@@ -542,6 +557,7 @@ namespace CapaVista_Seguridad
             this.SeguridadBtnSalir.TabIndex = 27;
             this.SeguridadBtnSalir.Text = "🚪\r\nSalir";
             this.SeguridadBtnSalir.UseVisualStyleBackColor = false;
+            this.SeguridadBtnSalir.Click += new System.EventHandler(this.SeguridadBtnSalir_Click);
             // 
             // SeguridadPbIconoPrincipal
             // 
@@ -581,16 +597,6 @@ namespace CapaVista_Seguridad
             this.SeguridadPbBanner.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.SeguridadPbBanner.TabIndex = 8;
             this.SeguridadPbBanner.TabStop = false;
-            // 
-            // SeguridadChkActivo
-            // 
-            this.SeguridadChkActivo.AutoSize = true;
-            this.SeguridadChkActivo.Location = new System.Drawing.Point(181, 102);
-            this.SeguridadChkActivo.Name = "SeguridadChkActivo";
-            this.SeguridadChkActivo.Size = new System.Drawing.Size(91, 20);
-            this.SeguridadChkActivo.TabIndex = 29;
-            this.SeguridadChkActivo.Text = "validacion";
-            this.SeguridadChkActivo.UseVisualStyleBackColor = true;
             // 
             // FrmMantenimientoPerfiles
             // 
