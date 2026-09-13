@@ -1,4 +1,4 @@
-namespace proyecto2k26
+namespace CapaVista_Seguridad
 {
     partial class FrmAsignacionAppPerf
     {

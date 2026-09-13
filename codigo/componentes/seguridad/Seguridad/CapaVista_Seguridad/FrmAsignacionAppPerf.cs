@@ -11,7 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace proyecto2k26
+namespace CapaVista_Seguridad
 {
     public partial class FrmAsignacionAppPerf : Form
     {

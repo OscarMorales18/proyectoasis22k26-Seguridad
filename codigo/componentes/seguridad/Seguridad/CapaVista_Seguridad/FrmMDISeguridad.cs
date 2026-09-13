@@ -1,5 +1,4 @@
 ﻿using AplicacionPerfiles;
-using proyecto2k26;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;

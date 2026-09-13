@@ -1,6 +1,4 @@
 ﻿using CapaControlador_Seguridad;
-using proyecto2k26;
-using proyectosisk26;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
