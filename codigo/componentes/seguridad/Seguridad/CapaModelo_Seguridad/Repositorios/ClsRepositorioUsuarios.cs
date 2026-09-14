@@ -17,6 +17,7 @@ namespace CapaModelo_Seguridad.Repositorios
         private string _Insert;
         private string _Delete;
         private string _Update;
+
         // Consulta para validar el login del usuario
         private string login = "SELECT idUsuario, idEmpleado, nombreUsuario, is_active " +
      "FROM tblusuario WHERE nombreUsuario=? AND contrasenaUsuario=? AND is_active=1";

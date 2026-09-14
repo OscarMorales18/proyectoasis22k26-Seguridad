@@ -8,7 +8,7 @@ namespace CapaModelo_Seguridad
     {
         private DataTable _TablaDatos; // Establece la tabla de datos para las consultas
 
-        //cuando hagamos un update insert o delete este es el metodo a llamar
+            //cuando hagamos un update insert o delete este es el metodo a llamar
         public int SeguridadMetEjecucionNonQuery(string ComandoTexto, List<OdbcParameter> Parametros, CommandType ComandoTipo)
         {
             using (var ConexionActiva = SeguridadMetObtenerConexion())

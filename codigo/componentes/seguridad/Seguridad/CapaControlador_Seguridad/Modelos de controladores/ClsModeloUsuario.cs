@@ -121,7 +121,7 @@ namespace CapaControlador_Seguridad
                 new ClsEstadoEntidadValor { Texto = "Inactivo", Valor = 0 }
             };
         }
-         //Metodo para el inicio de sesión, que valida el nombre de usuario y la contraseña ingresados por el usuario.
+      //Metodo para el inicio de sesión, que valida el nombre de usuario y la contraseña ingresados por el usuario.
         public bool SeguridadMetIniciarSesion(string NombreUsuario, string ContrasenaUsuario)
         {
             var resultado = _RepositorioUsuarios.SeguridadMetValidarLogin(NombreUsuario, ContrasenaUsuario);
