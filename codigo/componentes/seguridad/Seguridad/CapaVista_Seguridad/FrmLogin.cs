@@ -1,4 +1,6 @@
 ﻿using CapaControlador_Seguridad;
+
+
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,6 +17,10 @@ namespace CapaVista_Seguridad
     public partial class FrmLogin : Form
     {
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
         public FrmLogin()
         {
             InitializeComponent();
@@ -38,10 +44,30 @@ namespace CapaVista_Seguridad
 
         private void button1_Click(object sender, EventArgs e)
         {
-            FrmMDISeguridad Perfil = new FrmMDISeguridad();
-            this.Hide();
-            Perfil.ShowDialog();
-            this.Show();
+            try
+            {
+                var modelo = new ClsModeloUsuario();
+                bool acceso = modelo.SeguridadMetIniciarSesion(SeguridadTxtUsuario.Text, SeguridadTxtContraseña.Text);
+
+                if (acceso)
+                {
+                    this.Hide();
+                    var frmPrincipal = new FrmMDISeguridad(); // ajusta al nombre real de tu formulario principal
+                    frmPrincipal.ShowDialog();
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Usuario o contraseña incorrectos", "Acceso denegado", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    SeguridadTxtContraseña.Clear();
+                    SeguridadTxtContraseña.Focus();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+            ;
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -53,6 +79,11 @@ namespace CapaVista_Seguridad
             Recuperacion.ShowDialog();
 
             this.Show();
+        }
+
+        private void dgbConsultaTabla_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

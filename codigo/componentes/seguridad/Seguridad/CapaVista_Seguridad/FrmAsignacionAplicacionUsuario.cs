@@ -17,5 +17,10 @@ namespace CapaVista_Seguridad
         {
             InitializeComponent();
         }
+
+        private void FrmAsignacionAplicacionUsuario_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

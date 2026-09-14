@@ -66,7 +66,7 @@
             // btnAyuda
             // 
             this.btnAyuda.Location = new System.Drawing.Point(1048, -68);
-            this.btnAyuda.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAyuda.Margin = new System.Windows.Forms.Padding(4);
             this.btnAyuda.Name = "btnAyuda";
             this.btnAyuda.Size = new System.Drawing.Size(100, 28);
             this.btnAyuda.TabIndex = 21;
@@ -83,9 +83,9 @@
             this.SeguridadGbxDatos.Controls.Add(this.SeguridadLblAplicacion);
             this.SeguridadGbxDatos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SeguridadGbxDatos.Location = new System.Drawing.Point(16, 234);
-            this.SeguridadGbxDatos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SeguridadGbxDatos.Margin = new System.Windows.Forms.Padding(4);
             this.SeguridadGbxDatos.Name = "SeguridadGbxDatos";
-            this.SeguridadGbxDatos.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SeguridadGbxDatos.Padding = new System.Windows.Forms.Padding(4);
             this.SeguridadGbxDatos.Size = new System.Drawing.Size(1257, 142);
             this.SeguridadGbxDatos.TabIndex = 19;
             this.SeguridadGbxDatos.TabStop = false;
@@ -99,7 +99,7 @@
             this.SeguridadCboAplicacion.Location = new System.Drawing.Point(513, 81);
             this.SeguridadCboAplicacion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.SeguridadCboAplicacion.Name = "SeguridadCboAplicacion";
-            this.SeguridadCboAplicacion.Size = new System.Drawing.Size(216, 33);
+            this.SeguridadCboAplicacion.Size = new System.Drawing.Size(216, 40);
             this.SeguridadCboAplicacion.TabIndex = 10;
             // 
             // CboSeguridadModulo
@@ -110,7 +110,7 @@
             this.CboSeguridadModulo.Location = new System.Drawing.Point(252, 81);
             this.CboSeguridadModulo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.CboSeguridadModulo.Name = "CboSeguridadModulo";
-            this.CboSeguridadModulo.Size = new System.Drawing.Size(216, 33);
+            this.CboSeguridadModulo.Size = new System.Drawing.Size(216, 40);
             this.CboSeguridadModulo.TabIndex = 9;
             // 
             // CboSeguridadUsuario
@@ -121,7 +121,7 @@
             this.CboSeguridadUsuario.Location = new System.Drawing.Point(7, 81);
             this.CboSeguridadUsuario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.CboSeguridadUsuario.Name = "CboSeguridadUsuario";
-            this.CboSeguridadUsuario.Size = new System.Drawing.Size(216, 33);
+            this.CboSeguridadUsuario.Size = new System.Drawing.Size(216, 40);
             this.CboSeguridadUsuario.TabIndex = 8;
             // 
             // SeguridadLblUsuario
@@ -131,7 +131,7 @@
             this.SeguridadLblUsuario.Location = new System.Drawing.Point(8, 50);
             this.SeguridadLblUsuario.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.SeguridadLblUsuario.Name = "SeguridadLblUsuario";
-            this.SeguridadLblUsuario.Size = new System.Drawing.Size(66, 21);
+            this.SeguridadLblUsuario.Size = new System.Drawing.Size(85, 27);
             this.SeguridadLblUsuario.TabIndex = 1;
             this.SeguridadLblUsuario.Text = "Usuario";
             // 
@@ -142,7 +142,7 @@
             this.SeguridadLblModulo.Location = new System.Drawing.Point(263, 50);
             this.SeguridadLblModulo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.SeguridadLblModulo.Name = "SeguridadLblModulo";
-            this.SeguridadLblModulo.Size = new System.Drawing.Size(63, 21);
+            this.SeguridadLblModulo.Size = new System.Drawing.Size(82, 27);
             this.SeguridadLblModulo.TabIndex = 3;
             this.SeguridadLblModulo.Text = "Módulo";
             // 
@@ -153,7 +153,7 @@
             this.SeguridadLblAplicacion.Location = new System.Drawing.Point(532, 50);
             this.SeguridadLblAplicacion.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.SeguridadLblAplicacion.Name = "SeguridadLblAplicacion";
-            this.SeguridadLblAplicacion.Size = new System.Drawing.Size(85, 21);
+            this.SeguridadLblAplicacion.Size = new System.Drawing.Size(108, 27);
             this.SeguridadLblAplicacion.TabIndex = 5;
             this.SeguridadLblAplicacion.Text = "Aplicación";
             // 
@@ -201,7 +201,7 @@
             this.colIngresar});
             this.SeguridadDgvAsignaciones.EnableHeadersVisualStyles = false;
             this.SeguridadDgvAsignaciones.Location = new System.Drawing.Point(12, 25);
-            this.SeguridadDgvAsignaciones.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SeguridadDgvAsignaciones.Margin = new System.Windows.Forms.Padding(4);
             this.SeguridadDgvAsignaciones.MultiSelect = false;
             this.SeguridadDgvAsignaciones.Name = "SeguridadDgvAsignaciones";
             this.SeguridadDgvAsignaciones.ReadOnly = true;
@@ -220,9 +220,9 @@
             this.SeguridadGbxAsignaciones.Controls.Add(this.SeguridadDgvAsignaciones);
             this.SeguridadGbxAsignaciones.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SeguridadGbxAsignaciones.Location = new System.Drawing.Point(16, 405);
-            this.SeguridadGbxAsignaciones.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SeguridadGbxAsignaciones.Margin = new System.Windows.Forms.Padding(4);
             this.SeguridadGbxAsignaciones.Name = "SeguridadGbxAsignaciones";
-            this.SeguridadGbxAsignaciones.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SeguridadGbxAsignaciones.Padding = new System.Windows.Forms.Padding(4);
             this.SeguridadGbxAsignaciones.Size = new System.Drawing.Size(1257, 388);
             this.SeguridadGbxAsignaciones.TabIndex = 20;
             this.SeguridadGbxAsignaciones.TabStop = false;
@@ -291,7 +291,7 @@
             this.lblTitulo.Location = new System.Drawing.Point(-80, -82);
             this.lblTitulo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(342, 24);
+            this.lblTitulo.Size = new System.Drawing.Size(424, 29);
             this.lblTitulo.TabIndex = 18;
             this.lblTitulo.Text = "Asignación de Aplicación a Usuario";
             // 
@@ -339,7 +339,7 @@
             this.SeguridadLblDescripcion.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.SeguridadLblDescripcion.Location = new System.Drawing.Point(237, 112);
             this.SeguridadLblDescripcion.Name = "SeguridadLblDescripcion";
-            this.SeguridadLblDescripcion.Size = new System.Drawing.Size(338, 18);
+            this.SeguridadLblDescripcion.Size = new System.Drawing.Size(415, 22);
             this.SeguridadLblDescripcion.TabIndex = 2;
             this.SeguridadLblDescripcion.Text = "Administra la asignación de aplicaciones a usuarios.";
             // 
@@ -351,7 +351,7 @@
             this.LblSeguridadDescripcion.ForeColor = System.Drawing.Color.Teal;
             this.LblSeguridadDescripcion.Location = new System.Drawing.Point(235, 70);
             this.LblSeguridadDescripcion.Name = "LblSeguridadDescripcion";
-            this.LblSeguridadDescripcion.Size = new System.Drawing.Size(410, 25);
+            this.LblSeguridadDescripcion.Size = new System.Drawing.Size(506, 31);
             this.LblSeguridadDescripcion.TabIndex = 1;
             this.LblSeguridadDescripcion.Text = "Asignación de Aplicación a Usuario";
             // 
@@ -380,11 +380,12 @@
             this.Controls.Add(this.lblTitulo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "FrmAsignacionAplicacionUsuario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "2011 - Asignación de Aplicación a Usuario";
+            this.Load += new System.EventHandler(this.FrmAsignacionAplicacionUsuario_Load);
             this.SeguridadGbxDatos.ResumeLayout(false);
             this.SeguridadGbxDatos.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SeguridadDgvAsignaciones)).EndInit();
