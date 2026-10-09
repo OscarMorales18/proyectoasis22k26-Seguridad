@@ -34,7 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="CapaVista_Rrhh">
-      <HintPath>..\..\..\Recursos Humanos\CapaVista_Rrhh\bin\Debug\CapaVista_Rrhh.dll</HintPath>
+      <HintPath>..\..\Recursos Humanos\CapaVista_Rrhh\bin\Debug\CapaVista_Rrhh.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
