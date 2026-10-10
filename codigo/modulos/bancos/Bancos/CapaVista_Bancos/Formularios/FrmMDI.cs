@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CapaVista_MovimientosBancarios.Formularios;
 
 namespace CapaVista_Bancos.Formularios
 {
@@ -35,6 +36,12 @@ namespace CapaVista_Bancos.Formularios
                 BancosLblUsuario.Location = new Point(385, 14);
                 BancosLblUsuarioRol.Location = new Point(624, 14);
             }
+        }
+
+        private void BancosBtnMovBan_Click(object sender, EventArgs e)
+        {
+            FrmMovimientosBancarios MovimientosBancarios = new FrmMovimientosBancarios();
+            MovimientosBancarios.ShowDialog();
         }
     }
 }
