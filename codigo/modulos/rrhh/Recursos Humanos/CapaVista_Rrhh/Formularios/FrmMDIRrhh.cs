@@ -13,12 +13,13 @@
  * Reglas especificas:
  *  - Paleta del módulo 06 - Recursos Humanos.
  *  - Logo y mascota tomados de los recursos de Seguridad.
- *  - Usuario y rol se leen de la sesión iniciada en Seguridad
- *    (ClsSesionSeguridad), igual que en FrmMDISeguridad.
- *  - Los botones del menú se validan con
- *    ClsSeguridadFormHelper.SeguridadMetTieneAcceso(IdModulo,
- *    IdAplicacion); si el usuario no tiene acceso, el botón se
- *    deshabilita y se muestra en gris.
+ *  - Este formulario NO referencia las DLLs de Seguridad (sus bin no
+ *    se suben a Git). Quien abra el MDI despues del login le pasa los
+ *    datos con los metodos publicos:
+ *      RrhhMetActualizarInfoUsuario(nombre, rol)  -> usuario y rol
+ *      RrhhMetAplicarPermisos(validador)          -> botones en gris
+ *    Ej.: Mdi.RrhhMetAplicarPermisos(IdApp =>
+ *           ClsSeguridadFormHelper.SeguridadMetTieneAcceso(IdModulo, IdApp));
  *  - Los valores de los KPIs son de ejemplo; se conectarán al
  *    Controlador cuando el módulo sea funcional.
  *  - El código de aplicación queda como "0000" y los Id de módulo y
@@ -26,8 +27,6 @@
  * ===================================================================
 */
 
-using CapaControlador_Seguridad.Objetos_de_valor;
-using CapaVista_Seguridad.Ayudas;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -41,10 +40,6 @@ namespace CapaVista_Rrhh.Formularios
         private bool _NavegadorColapsado;
         private int _AnchoNavegador;
 
-        // Id del módulo de RRHH en la tabla de módulos de Seguridad.
-        // Mientras sea 0 no se validan permisos (todos los botones quedan habilitados).
-        private static readonly int RrhhIdModulo = 0;
-
         public FrmMDIRrhh()
         {
             InitializeComponent();
@@ -54,8 +49,6 @@ namespace CapaVista_Rrhh.Formularios
         private void FrmMDIRrhh_Load(object sender, EventArgs e)
         {
             RrhhMetCargarIconos();
-            RrhhMetActualizarInfoUsuario();
-            RrhhMetAplicarPermisos();
             RrhhMetDarFormaTarjetas();
         }
 
@@ -103,18 +96,19 @@ namespace CapaVista_Rrhh.Formularios
             return Resultado;
         }
 
-        private void RrhhMetActualizarInfoUsuario()
+        // Lo llama quien abre el MDI despues del login, con los datos de la sesion
+        // (ClsSesionSeguridad.NombreEmpleado y SeguridadMetRolesComoTexto()).
+        public void RrhhMetActualizarInfoUsuario(string NombreEmpleado, string Rol)
         {
-            RrhhLblUsuario.Text = $"Usuario: {ClsSesionSeguridad.NombreEmpleado}";
-            RrhhLblUsuarioRol.Text = $"Rol: {ClsSesionSeguridad.SeguridadMetRolesComoTexto()}";
+            RrhhLblUsuario.Text = $"Usuario: {NombreEmpleado}";
+            RrhhLblUsuarioRol.Text = $"Rol: {Rol}";
             RrhhLblUsuarioRol.Left = RrhhLblUsuario.Right + 30;
         }
 
-        // Botón del menú -> Id de aplicación en Seguridad (pendientes de asignar)
-        private void RrhhMetAplicarPermisos()
+        // Recibe la validacion de Seguridad como funcion (IdAplicacion -> tiene acceso)
+        // para no depender de sus DLLs. Botón del menú -> Id de aplicación (pendientes).
+        public void RrhhMetAplicarPermisos(Func<int, bool> TieneAcceso)
         {
-            if (RrhhIdModulo == 0) return;
-
             var MapaBotonesMDI = new Dictionary<Button, int>
             {
                 { RrhhBtnEmpleados, 0 },
@@ -129,7 +123,7 @@ namespace CapaVista_Rrhh.Formularios
 
             foreach (var Par in MapaBotonesMDI)
             {
-                if (!ClsSeguridadFormHelper.SeguridadMetTieneAcceso(RrhhIdModulo, Par.Value))
+                if (!TieneAcceso(Par.Value))
                     RrhhMetDeshabilitarBoton(Par.Key);
             }
         }
