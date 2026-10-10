@@ -46,13 +46,56 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Formularios\FormMDI.cs">
+    <Compile Include="Formularios\FrmMDIRrhh.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\FormMDI.Designer.cs">
-      <DependentUpon>FormMDI.cs</DependentUpon>
+    <Compile Include="Formularios\FrmMDIRrhh.Designer.cs">
+      <DependentUpon>FrmMDIRrhh.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_asistencia.png" />
+    <None Include="Resources\btn_asistencia_diseno.png" />
+    <None Include="Resources\btn_ayuda.png" />
+    <None Include="Resources\btn_capacitaciones.png" />
+    <None Include="Resources\btn_capacitaciones_diseno.png" />
+    <None Include="Resources\btn_cerrarsesion.png" />
+    <None Include="Resources\btn_cerrarsesion_diseno.png" />
+    <None Include="Resources\btn_cierres.png" />
+    <None Include="Resources\btn_cierres_diseno.png" />
+    <None Include="Resources\btn_empleados.png" />
+    <None Include="Resources\btn_empleados_diseno.png" />
+    <None Include="Resources\btn_evaluacion.png" />
+    <None Include="Resources\btn_evaluacion_diseno.png" />
+    <None Include="Resources\btn_liquidacion.png" />
+    <None Include="Resources\btn_liquidacion_diseno.png" />
+    <None Include="Resources\btn_nomina.png" />
+    <None Include="Resources\btn_nomina_diseno.png" />
+    <None Include="Resources\btn_permisos.png" />
+    <None Include="Resources\btn_permisos_diseno.png" />
+    <None Include="Resources\fondo_dashboard.png" />
+    <None Include="Resources\fondo_navegador.png" />
+    <None Include="Resources\icono_rrhh.ico" />
+    <None Include="Resources\kpi_capacitaciones.png" />
+    <None Include="Resources\kpi_colaboradores.png" />
+    <None Include="Resources\kpi_evaluaciones.png" />
+    <None Include="Resources\kpi_liquidacion.png" />
+    <None Include="Resources\kpi_nomina.png" />
+    <None Include="Resources\kpi_permisos.png" />
+    <None Include="Resources\logo.png" />
+    <None Include="Resources\mascota.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Ayudas\" />
