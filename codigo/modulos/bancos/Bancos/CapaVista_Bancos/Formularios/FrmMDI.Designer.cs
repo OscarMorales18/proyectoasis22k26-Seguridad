@@ -608,6 +608,7 @@
             this.BancosBtnMovBan.Size = new System.Drawing.Size(264, 42);
             this.BancosBtnMovBan.TabIndex = 1;
             this.BancosBtnMovBan.UseVisualStyleBackColor = false;
+            this.BancosBtnMovBan.Click += new System.EventHandler(this.BancosBtnMovBan_Click);
             // 
             // BancosPbLogo
             // 
@@ -627,8 +628,9 @@
             this.ClientSize = new System.Drawing.Size(1544, 806);
             this.Controls.Add(this.BancosPnlFondo);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.IsMdiContainer = true;
             this.Name = "FrmMDIBancos";
-            this.Text = "MDI Principal de Bancos";
+            this.Text = "8000 - MDI Principal de Bancos";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.BancosPnlFondo.ResumeLayout(false);
             this.BancosPnlFondo.PerformLayout();
