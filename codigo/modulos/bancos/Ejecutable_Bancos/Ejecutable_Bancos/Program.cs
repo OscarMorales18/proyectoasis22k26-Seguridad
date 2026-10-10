@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CapaVista_Bancos;
 
 namespace Ejecutable_Bancos
 {
@@ -16,7 +17,7 @@ namespace Ejecutable_Bancos
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new CapaVista_Bancos.Formularios.FrmMDI());
+            Application.Run(new CapaVista_Bancos.Formularios.FrmMDIBancos());
         }
     }
 }
