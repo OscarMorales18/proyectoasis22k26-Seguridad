@@ -40,9 +40,13 @@
     <Reference Include="CapaVista_CierreNominas">
       <HintPath>..\..\Cierre de Nominas\CapaVista_CierreNominas\bin\Debug\CapaVista_CierreNominas.dll</HintPath>
     </Reference>
-    <Reference Include="CapaVista_Liquidacion_Rrhh, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+<Reference Include="CapaVista_Liquidacion_Rrhh, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\Liquidacion_Empleados_Rrhh\CapaVista_Liquidacion_Rrhh\bin\Debug\CapaVista_Liquidacion_Rrhh.dll</HintPath>
+    </Reference>
+    <Reference Include="CapaVista_Nomina">
+      <HintPath>..\..\NominasEmpleados\CapaVista_Nomina\bin\Debug\CapaVista_Nomina.dll</HintPath>
+    </Reference>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

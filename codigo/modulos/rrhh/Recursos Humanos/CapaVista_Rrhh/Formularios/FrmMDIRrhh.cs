@@ -29,6 +29,7 @@ using System.Windows.Forms;
 using CapaVista_CierreNominas.Fomularios;
 using CapaVista_Liquidacion_Rrhh.Formularios;
 
+using CapaVista_Nomina.Formularios;
 
 
 namespace CapaVista_Rrhh.Formularios
@@ -351,6 +352,15 @@ namespace CapaVista_Rrhh.Formularios
         {
             FrmLiquidacionEmpleados liquidacionEmpleados = new FrmLiquidacionEmpleados();
             liquidacionEmpleados.ShowDialog();
+        private void FrmMDIRrhh_Load_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void RrhhBtnNomina_Click(object sender, EventArgs e)
+        {
+            FrmPercepcionesDeducciones CierreNominas = new FrmPercepcionesDeducciones();
+            CierreNominas.ShowDialog();
         }
     }
 }

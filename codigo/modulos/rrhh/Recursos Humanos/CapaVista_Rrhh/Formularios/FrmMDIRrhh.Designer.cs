@@ -224,6 +224,7 @@
             this.RrhhBtnNomina.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.RrhhBtnNomina.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.RrhhBtnNomina.UseVisualStyleBackColor = false;
+            this.RrhhBtnNomina.Click += new System.EventHandler(this.RrhhBtnNomina_Click);
             this.RrhhBtnNomina.MouseEnter += new System.EventHandler(this.RrhhBtnMenu_MouseEnter);
             this.RrhhBtnNomina.MouseLeave += new System.EventHandler(this.RrhhBtnMenu_MouseLeave);
             // 
@@ -935,6 +936,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "9000 - MDI Principal de Recursos Humanos";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.FrmMDIRrhh_Load_1);
             this.RrhhPnlNavegador.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.RrhhPbLogo)).EndInit();
             this.RrhhPnlBarraSuperior.ResumeLayout(false);
