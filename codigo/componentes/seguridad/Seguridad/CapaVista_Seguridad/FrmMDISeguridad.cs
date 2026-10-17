@@ -263,7 +263,7 @@ namespace CapaVista_Seguridad
                     "Acceso denegado", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-            FrmMantenimientoAplicacion Aplicaciones = new FrmMantenimientoAplicacion();
+            FrmMantenimientoAplicacionNavegador Aplicaciones = new FrmMantenimientoAplicacionNavegador();
             Aplicaciones.ShowDialog();
         }
         /*
